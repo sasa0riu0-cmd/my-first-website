@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>うちの動画紹介サイト</title>
+    <style>
+        /* 全体のスタイル */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        /* メインコンテナ */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* 見出し */
+        h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 説明文 */
+        .description {
+            color: white;
+            font-size: 1.2em;
+            margin-bottom: 50px;
+            opacity: 0.9;
+        }
+
+        /* 動画コンテナ */
+        .video-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* 各動画カード */
+        .video-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* サムネイル */
+        .thumbnail {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+        }
+
+        /* 動画タイトル */
+        .video-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* 価格 */
+        .price {
+            color: #667eea;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>うちの動画紹介サイト</h1>
+        <p class="description">これは、自由に動画を紹介するサイトです。</p>
+        
+        <div class="video-grid">
+            <!-- 動画カード1 -->
+            <div class="video-card">
+                <div class="thumbnail">🎬</div>
+                <div class="video-title">おすすめ動画 Vol.1</div>
+                <div class="price">100コイン</div>
+            </div>
+
+            <!-- 動画カード2 -->
+            <div class="video-card">
+                <div class="thumbnail">🎥</div>
+                <div class="video-title">おすすめ動画 Vol.2</div>
+                <div class="price">100コイン</div>
+            </div>
+
+            <!-- 動画カード3 -->
+            <div class="video-card">
+                <div class="thumbnail">📹</div>
+                <div class="video-title">おすすめ動画 Vol.3</div>
+                <div class="price">100コイン</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
